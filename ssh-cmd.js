@@ -95,18 +95,7 @@ let SSH = new SSH2Shell({
 });
 
 var callback = function(sessionText){
-    var lines = sessionText.split('\n');
-
-    var echoLine = false;
-    lines.forEach(line => {
-        if (echoLine || line.indexOf('registered IP') >= 0){
-            echoLine = true;
-            process.stdout.write(line + '\n');
-        }
-        if (line.indexOf('Total: ') === 0) {
-            echoLine = false;
-        }
-    });
+    process.stdout.write(sessionText);
     process.exit(0);
 };
 
