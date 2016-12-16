@@ -1,0 +1,21 @@
+{
+  "name": "ssh-cmd",
+  "version": "1.0.0",
+  "description": "Simple wrapper for ssh commands.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ssh-cmd": "ssh-cmd.js"
+  },
+  "engines": {
+    "node": ">=4.4.0"
+  },
+  "author": "Daniel H Moran",
+  "license": "SEE LICENSE",
+  "homepage": "https://github.com/danielheth/ssh-cmd#readme",
+  "dependencies": {
+    "prompt-sync": "^4.1.4",
+    "ssh2shell": "^1.7.0"
+  }
+}
